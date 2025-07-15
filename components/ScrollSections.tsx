@@ -67,6 +67,8 @@ export default function ScrollSections() {
           },
         });
       }
+
+      console.log(index);
     });
 
     return () => {
@@ -143,11 +145,12 @@ export default function ScrollSections() {
       <section className="scroll-section min-h-screen flex items-center justify-center px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="reveal-text text-4xl md:text-6xl font-bold text-white mb-8">
-            Let's Work Together
+            {"Let's Work Together"}
           </h2>
           <p className="reveal-text text-xl text-gray-300 mb-12">
-            Ready to bring your ideas to life? Let's create something amazing
-            together.
+            {
+              "Ready to bring your ideas to life? Let's create something amazing together."
+            }
           </p>
           <div className="reveal-text">
             <button className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full text-white font-semibold text-lg hover:scale-105 transition-transform">
